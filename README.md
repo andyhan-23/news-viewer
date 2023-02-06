@@ -16,7 +16,7 @@ axios는 현대 가장 많이 사용되고 있는 자바스크립트 HTTP 클라
 
 ### `3. newsapi API 키 발급하기`
 
-https://newsapi.org/register에 가입 후 https://newsapi.org/s/south-korea-news-api링크에 들어가 한국 뉴스를 가져오는 api키를 발급받을수 있습니다. 
+https://newsapi.org/register 가입 후 https://newsapi.org/s/south-korea-news-api 링크에 들어가 한국 뉴스를 가져오는 api키를 발급받을수 있습니다. 
 
 
 ### `4. 뉴스 뷰어 UI 만들기`
