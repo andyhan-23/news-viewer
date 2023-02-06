@@ -2,7 +2,7 @@
 
 
 
-## https://newsapi.org/에서 제공하는 API사용
+## https://newsapi.org/ 에서 제공하는 API사용
 
 
 ### `1. 비동기 작업의 이해`
