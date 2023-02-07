@@ -24,9 +24,9 @@ const MovieList = ({ genre }) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const query = genre === 'all' ? '' : `&genre=${genre}`;
+        const query = genre === 'popularity.desc' ? '' : `sort_by=${genre}`;
         const response = await axios.get(
-          'https://api.themoviedb.org/3/discover/movie?api_key=7f1cad794b5dfdeff3acea7bd729e2c9&language=ko&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate',
+          `https://api.themoviedb.org/3/discover/movie?api_key=7f1cad794b5dfdeff3acea7bd729e2c9&language=ko&${query}&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`,
         );
         setResults(response.data.results);
       } catch (e) {
@@ -35,7 +35,7 @@ const MovieList = ({ genre }) => {
       setLoading(false);
     };
     fetchData();
-  }, []);
+  }, [genre]);
 
   if (loading) {
     return <MovieListBlock>대기 중...</MovieListBlock>;

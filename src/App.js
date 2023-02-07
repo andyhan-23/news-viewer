@@ -22,18 +22,16 @@ const App = () => {
 export default App;
 */
 
-import { useState, useCallback } from 'react';
-import MovieList from './components/MovieList';
-import Genres from './components/Genres';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MoviePage from './pages/MoviePage';
 
 const App = () => {
-  const [genre, setGenre] = useState('all');
-  const onSelect = useCallback((genre) => setGenre(genre), []);
   return (
-    <>
-      <Genres genre={genre} onSelect={onSelect} />
-      <MovieList genre={genre} />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/:genre?" element={<MoviePage />} />
+      </Routes>
+    </Router>
   );
 };
 export default App;
