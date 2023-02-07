@@ -53,7 +53,7 @@ const Genre = styled(NavLink)`
 
   &.active {
     font-weight: 600;
-    border-bottom: 2px splid red;
+    border-bottom: 2px solid red;
     color: red;
     &:hover {
       color: red;
@@ -70,9 +70,8 @@ const Genres = () => {
       {genres.map((g) => (
         <Genre
           key={g.name}
-          activeClassName="active"
           exact={g.name === 'popularity.desc'}
-          to={g.name === 'popularity.desc' ? '/' : `/${g.name}`}
+          to={g.name === 'popularity.desc' ? '/popularity.desc' : `/${g.name}`}
         >
           {g.text}
         </Genre>

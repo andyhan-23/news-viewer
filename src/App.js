@@ -1,27 +1,23 @@
-/*
-import { useState, useCallback } from 'react';
-import {
-  BrowserRouter as Router,
-  Rooute,
-  Route,
-  Routes,
-} from 'react-router-dom';
-import NewsList from './components/NewsList';
-import Categories from './components/Categories';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NewsPage from './pages/NewsPage';
-
+import MoviePage from './pages/MoviePage';
+import MainPage from './pages/MainPage';
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/:category?" element={<NewsPage />} />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/:category?" element={<NewsPage />} />
+          <Route path="/:genre?" element={<MoviePage />} />
+        </Routes>
+      </Router>
+    </>
   );
 };
 export default App;
-*/
 
+/*
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MoviePage from './pages/MoviePage';
 
@@ -35,3 +31,4 @@ const App = () => {
   );
 };
 export default App;
+*/
