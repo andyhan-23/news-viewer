@@ -40,4 +40,11 @@ business(비즈니스) science(과학) entertainment(연예) sports(스포츠) h
 ## 구현화면
 <img width="828" alt="스크린샷 2023-02-06 오후 10 45 19" src="https://user-images.githubusercontent.com/98483125/216987429-17a237a4-973d-4527-b602-113707bbb5d3.png">
 
+# 무비 API를 활용한 뉴스 뷰어 만들기
 
+## https://www.themoviedb.org 에서 제공하는 API사용
+
+### `방법은 위와 동일`
+
+## 구현화면
+<img width="828" alt="스크린샷 2023-02-07 오후 9 46 54" src="https://user-images.githubusercontent.com/98483125/217249127-b63adddc-0e90-4fb2-9ea2-44f86db3d709.png">
